@@ -10,6 +10,6 @@ target = "functions/common_events.lua"
 pattern = "if specific_vars and specific_vars.sticker then info_queue[#info_queue+1] = {key = string.lower(specific_vars.sticker)..'_sticker', set = 'Other'} end"
 position = "after"
 payload = '''
-table.remove(info_queue, #info_queue)
+if specific_vars and specific_vars.sticker then table.remove(info_queue, #info_queue) end
 '''
 match_indent = true

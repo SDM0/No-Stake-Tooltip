@@ -5,5 +5,5 @@
 	"description": "Disable the stake tooltip on cards.",
 	"prefix": "nst",
 	"main_file": "main.lua",
-	"version": "1.0.0"
+	"version": "1.0.1"
 }
